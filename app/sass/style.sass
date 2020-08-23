@@ -38,11 +38,15 @@ h3
 	font-weight: 300 
 	font-family: $nunito
 h4 
-	font-size: 7vw
-	font-family: $nunito 
-	font-weight: 400
-	margin-top: 5vw 
-	margin-bottom: 0vw
+	font-family: $nunito
+	font-weight: 600
+	font-size: 6.4vw
+	margin-top: 0 
+	margin-bottom: 0
+	line-height: 1.2
+	color: $grey
+	margin-bottom: 4vw
+	text-align: center
 h5 
 	color: $black 
 	font-size: 6vw 
@@ -195,6 +199,8 @@ main
 //----start main screen style-----
 .main-screen
 	padding-top: 25vw
+	h2 
+		margin-bottom: 10vw
 .main-screen__images
 	
 .main-screen__img-wrapper
@@ -224,7 +230,7 @@ main
 .main-screen__text
 	font-weight: 300 
 	font-family: $nunito
-	margin-bottom: 4vw
+	margin-bottom: 14vw
 	font-size: 4.7vw
 	text-align: center
 	span 
@@ -283,9 +289,9 @@ main
 .how-it-works
 	text-align: center
 .how-it-works__num
-	font-size: 8vw
+	font-size: 8.4vw
 	font-family: $nunito 
-	font-weight: 300 
+	font-weight: 600 
 	color: #fff 
 	background: #eb533c
 	width: 18vw 
@@ -315,13 +321,17 @@ main
 	padding-top: 10vw 
 	padding-bottom: 10vw
 .features__item-wrapper
-	display: flex
+	//display: flex
 	text-align: left
-	align-items: center
+	//align-items: center
+	img 
+		float: left
+
 .features__item
-	padding-top: 15vw
-	h5 
+	padding-top: 10vw
+	h4
 		margin-bottom: 5vw
+		text-align: left
 
 	p 
 		max-width: 90vw 
@@ -330,15 +340,16 @@ main
 	min-width: 20vw
 	margin-right: 5vw
 	img 
-		max-width: 20vw 
-		max-height: 20vw
+		max-width: 15vw 
+		max-height: 15vw
+		padding: 2vw 4vw
 
 		
 // end features section
 
 // start Showcase style
 .showcase
-	padding-bottom: 20vw
+	padding-bottom: 14vw
 .showcase__items
 	display: flex 
 	flex-wrap: wrap 
@@ -349,7 +360,7 @@ main
     border: solid 1px #f7f7f7
 	padding: 2vw
 	box-sizing: border-box
-	margin-top: 10vw
+	margin-top: 14vw
 	color: $grey
 	img 
 		width: 100%
@@ -393,7 +404,13 @@ main
 	margin-bottom: 4vw
 	//justify-content: flex-end
 .world-img
-	width: 60vw
+	width: 43vw
+	height: 43vw
+	max-width: 43vw
+	max-height: 43vw
+	min-width: 43vw
+	min-height: 43vw
+
 .game-wrapper
 	padding-top: 7vw 
 	img 
@@ -405,7 +422,6 @@ main
 //start types game style
 .types-game
 	padding-top: 10vw 
-	padding-bottom: 10vw
 .types-game__item
 	padding-top: 10vw
 
@@ -452,7 +468,7 @@ main
 	justify-content: flex-start
 .how-make-money
 	padding-top: 10vw 
-	padding-bottom: 20vw
+	padding-bottom: 4vw
 	p 
 		max-width: 80vw
 //end make mony style
@@ -482,7 +498,7 @@ main
 	img 
 		width: 100%
 .building-process__item
-	padding-top: 5vw
+	padding-top: 9vw
 //end building process
 
 //start competition style
@@ -491,6 +507,7 @@ main
 	padding-bottom: 10vw
 	.sub-title 
 		text-align: left
+		padding-top: 10vw
 .competition__item
 	padding-top: 5vw
 	text-align: center
@@ -531,6 +548,8 @@ main
 	h2 
 		span 
 			font-weight: bold
+	h2:first-child 
+		margin-bottom: 14vw
 //end win style
 
 //start footer
