@@ -24,9 +24,17 @@ $('.header').removeClass("sticky");
 //-------end sticky header--------
 
 //-------start img rotate-------
-setInterval(function() {
-	$('.main-screen__img-wrapper').toggleClass('active');
-}, 5000);
+// setInterval(function() {
+// 	$('.main-screen__img-wrapper').toggleClass('active');
+// }, 5000);
+// start slider
+$('.slider').slick({
+prevArrow: false,
+nextArrow: false,
+slidesToShow: 1,
+dots: true
+});
+// end slider
 //------end img rotate------
 
 //------start popup------

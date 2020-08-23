@@ -194,11 +194,10 @@ main
 .main-screen
 	padding-top: 25vw
 .main-screen__images
-	display: flex
+	
 .main-screen__img-wrapper
-	display: none
+	display: flex
 	justify-content: center
-	width: 100%
 	img 
 		width: 50vw
 		max-width: 50vw
@@ -210,12 +209,14 @@ main
 	display: flex
 .img-wrapper
 	position: relative
+	margin-top: 3vw
+
 .main-screen__content
 	margin-bottom: 10vw
 	img 
 		width: 30vw
 .main-text
-	//margin-top: 2vw
+	margin-top: 3vw
 .main-screen__content
 	padding-top: 7vw
 .main-screen__text
@@ -230,6 +231,7 @@ main
 	text-align: center
 	display: flex
 	flex-direction: column
+
 .main-screen__video-link
 	margin-top: 3vw
 	font-size: 3.8vw
@@ -574,6 +576,31 @@ main
 	min-width: 33.3%
 .table__row:last-child 
 	border-bottom: none
+.slick-dots
+	display: flex
+	justify-content: center
+	padding-top: 3vw
+	li 
+		margin: 0 1vw
+		background: transparent
+		height: 2.5vw 
+		width: 2.5vw
+		border: 1px solid $aqua
+		border-radius: 50%
+		outline: none
+		cursor: pointe
+		button
+			padding: 0
+			font-size: 0
+			background: transparent
+			outline: none
+			color: transparent
+			border: none
+			
+	.slick-active
+		
+		background: $aqua
+
 @import "media"
 
 
