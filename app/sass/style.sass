@@ -53,7 +53,7 @@ h6
 	font-size: 4.5vw
 	font-family: $nunito
 	font-weight: 400 
-	color: $black
+	color: $grey
 	margin-top: 3vw 
 	margin-bottom: 0
 main 
@@ -87,8 +87,10 @@ main
 	background: $aqua
 	display: inline-block
 	padding: 3vw 10vw
-	font-size: 7vw
 	border-radius: 1vw
+	font-family: $nunito
+	font-weight: 600
+	font-size: 7.4vw
 .sub-title 
 	text-align: center
 //---end global style------
@@ -312,11 +314,26 @@ main
 	text-align: center
 	padding-top: 20vw 
 	padding-bottom: 20vw
+.features__item-wrapper
+	display: flex
+	text-align: left
+	align-items: center
 .features__item
 	padding-top: 15vw
+	h5 
+		margin-bottom: 5vw
+
 	p 
 		max-width: 90vw 
 		margin: 0 auto
+.features__item-img
+	min-width: 20vw
+	margin-right: 5vw
+	img 
+		max-width: 20vw 
+		max-height: 20vw
+
+		
 // end features section
 
 // start Showcase style
@@ -333,6 +350,7 @@ main
 	padding: 2vw
 	box-sizing: border-box
 	margin-top: 10vw
+	color: $grey
 	img 
 		width: 100%
 	p 
@@ -356,6 +374,9 @@ main
 // end Showcase style
 
 // start check-this-game style
+.check-this-game
+	h2 
+		text-align: left
 .check-this-game__top
 	margin-bottom: 4vw
 	//display: flex
@@ -383,9 +404,13 @@ main
 //start types game style
 .types-game
 	padding-top: 20vw 
-	padding-bottom: 20vw
+	padding-bottom: 10vw
 .types-game__item
-	padding-top: 10vw
+	padding-top: 5vw
+
+	.text-section__line
+		margin-top: 10vw
+
 .types-game__img
 	width: 50vw 
 	margin: 0 auto
@@ -395,7 +420,6 @@ main
 	h4 
 		text-align: center
 	p 
-		text-align: center
 		margin-top: 1vw
 //end types game style
 
@@ -417,13 +441,14 @@ main
 //start make mony style
 .how-make-money__item
 	display: flex
-	flex-direction: column 
 	align-items: center
-	text-align: center
 	padding-top: 10vw
+	p 
+		//padding-left: 5vw
 .how-make-money__img
-	width: 20vw 
-	padding-right: 6vw
+	min-width: 28vw 
+	display: flex 
+	justify-content: flex-start
 .how-make-money
 	padding-top: 20vw 
 	padding-bottom: 20vw
@@ -444,20 +469,32 @@ main
 //end networks style
 
 //start building process
+.building-process
+	.sub-title
+		margin-bottom: 5vw
 .building-process__item
+	h4 
+		margin-bottom: 3vw
+		text-align: center
+	p 
+		margin-top: 3vw
 	img 
 		width: 100%
 .building-process__item
-	padding-top: 15vw
+	padding-top: 5vw
 //end building process
 
 //start competition style
 .competition
 	padding-top: 20vw
 	padding-bottom: 20vw
+	.sub-title 
+		text-align: left
 .competition__item
 	padding-top: 5vw
 	text-align: center
+	p 
+		text-align: left
 .competition__item-value
 	font-size: 15vw
 	border-bottom: 2vw solid #fe6354
@@ -506,7 +543,7 @@ main
 		display: block
 		margin-bottom: 3vw
 		font-size: 3.8vw
-		color: $black
+		color: $grey
 .footer__menu-col
 	width: 50%
 .footer__social
