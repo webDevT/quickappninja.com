@@ -100,7 +100,7 @@
                     <ul>
                     	<li class="menu__group">
                     		<li><a href="registration.html">Register</a></li>
-                    	<li><a href="login.html">Login</a></li>
+                    	<li><a href="login,html">Login</a></li>
                     	</li>
 
                     	<li class="menu__group">
@@ -125,17 +125,65 @@
 
 <main>
 
-	<div class="testimonials">
+	<div class="registration">
 		<div class="container">
-		<h2>Testimonials</h2>
+		<h2>Login</h2>
+        <div class="registration__sub-title">Login with your email / username <br>or social account</div>
+
+        <div class="reg-content">
+            <div class="reg-title">USE YOUR SOCIAL ACCOUNT</div>
+            <div class="fb__btn">
+                <img src="img/fb.svg" alt="">
+                Facebook
+            </div>
+
+            <div class="google__btn">
+                <img src="img/google.svg" alt="">
+                Google
+            </div>
+            <div class="vk__btn">
+                <img src="img/vk1.svg" alt="">
+                Vkontakte
+            </div>
+
+            <div class="or"><span>or</span></div>
+
+            <div class="reg-title">YOUR EMAIL OR USERNAME</div>
+
+            <form action="" class="contant-form" id="form" method="post" >
+        
+<div class="input-wrapper">
+    <input type="text" id="username" name="name" placeholder="Email or username" /></div>
+
+    <div class="input-wrapper">
+  <input type="text" id="password" name="password" placeholder="Password"></div>
+ 
+  <div class="form-footer">
+    
+   <input type="submit" value="Login" id="submit" name="submit" class="button" />
+  </div>
+  <a href="password-restore.html" class="forgot-password">Forgot password?</a>
+  <div>
+    <!-- <input type="submit" value="Submit" /> -->
+  </div>
+           
+        </form>
+
+        <div class="reg__footer">
+           By clicking "Login" or sign in via your social network account, you are indicating that
+you have read and agree to the <a href="terms-and-conditions.html">Terms of Service</a> and <a href="privacy-policy.html">Privacy Policy</a>.
+        </div>
+
+        <div class="reg__login">
+          Don't have an account? <a href="registration.html">Register</a>
+        </div>
+        
+        </div>
+
 		
 	
 		
-<div class='embedsocial-reviews' data-ref="a69857837636ded7121977d5582a2fe453f100a2"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ri.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsScript"));</script>
-<div class="button-wrapper">
-		<a href="registration.html" class="button">
-                            Create Game Now
-                        </a>
+
 	</div>
 
 </div>
@@ -202,6 +250,40 @@
 
 <!-- -------end video popup--------- -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>$(document).ready(function() {
+  $('#form').submit(function(e) {
+    e.preventDefault();
+    var username = $('#username').val();
+    var password = $('#password').val();
+    $(".error").remove();
+ 
+    if (username.length< 1) {
+      $('#username').after('<span class="error">This field </br >is required</span>').addClass("invalid");
+    }
+    if (username.length< 2 && username.length== 1 ) {
+      $('#username').after('<span class="error">This field must be </br >at least 2 characters long</span>').addClass("invalid");
+    }
+    if (password.length< 1) {
+      $('#password').after('<span class="error">This field  </br >is required</span>').addClass("invalid");
+    }
+    if (password.length< 2 && password.length== 1 ) {
+      $('#password').after('<span class="error">This field must be </br >at least 6 characters long</span>').addClass("invalid");
+    }
+    
+
+
+  });
+
+
+
+});
+
+
+
+
+
+</script>
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -66,6 +66,23 @@ main
 		font-size: 4vw
 	h3 
 		font-size: 5.6vw
+input 
+	width: 100%
+	height: 15.938vw
+	border-radius: 1vw
+	border: 1px solid #ebebeb
+	background-color: #fafafa
+	font-size: 1.125rem
+	font-weight: 300
+	line-height: 36px
+	font-family: "Open Sans",sans-serif
+	box-sizing: border-box
+	padding: 5vw
+	outline: none
+input::placeholder 
+	color: #999999
+input:focus::placeholder
+	color: transparent
 .red 
 	color: #fe6354
 .blue 
@@ -675,6 +692,159 @@ main
 .review.review--bottom
 	padding-top: 0
 	padding-bottom: 10vw
+
+//start registration style
+.registration__sub-title
+	font-family: $nunito
+	text-align: center
+	margin-bottom: 10vw
+	span 
+		font-weight: 600
+.reg-title
+	text-align: center
+	font-size: 4vw
+	font-weight: 600
+	color: #566473
+	margin-bottom: 7vw
+.google__btn
+	background-color: #f1f1f1
+	color: #566473
+	display: flex 
+	align-items: center
+	width: 100% 
+	border-radius: 1vw
+	padding: 3vw 10vw
+	box-sizing: border-box
+	font-size: 6vw
+	font-weight: 300
+	margin-top: 5vw
+	img 
+		width: 10vw
+		height: 10vw
+		max-height: 10vw 
+		min-height: 10vw 
+		max-width: 10vw 
+		min-width: 10vw
+		margin-right: 15vw
+.google__btn:hover,
+.google__btn:focus,
+.google__btn:active	
+	background: #d8d8d8
+	color: #566473
+.vk__btn
+	background: #4c75a3
+	display: flex 
+	align-items: center
+	width: 100% 
+	border-radius: 1vw
+	padding: 3vw 10vw
+	box-sizing: border-box
+	font-size: 6vw
+	font-weight: 300
+	color: #fff
+	margin-top: 5vw
+	img 
+		width: 10vw
+		max-height: 10vw 
+		min-height: 10vw 
+		max-width: 10vw 
+		min-width: 10vw
+		margin-right: 15vw
+.vk__btn:hover,
+.vk__btn:active,
+.vk__btn:focus
+	background: #3c5c80
+.fb__btn 
+	background: #3b5998
+	display: flex 
+	align-items: center
+	width: 100% 
+	border-radius: 1vw
+	padding: 3vw 10vw
+	box-sizing: border-box
+	font-size: 6vw
+	font-weight: 300
+	color: #fff
+	margin-top: 5vw
+	img 
+		width: 10vw
+		max-height: 10vw 
+		min-height: 10vw 
+		max-width: 10vw 
+		min-width: 10vw
+		margin-right: 15vw
+.fb__btn:hover,
+.fb__btn:focus,
+.fb__btn:active	
+	background: #2d4373
+.or 
+	text-align: center
+	margin-top: 7vw 
+	margin-bottom: 7vw
+	position: relative
+	span
+		background: #fff
+		position: relative
+		padding: 0 2vw
+.or:before
+	content: ''
+	width: 100% 
+	height: 1px 
+	background: #dedede
+	display: block
+	top: 50%
+	left: 0
+	position: absolute
+	transform: translateY(50%)
+.input-wrapper
+	position: relative
+	margin-bottom: 5vw
+.error
+	color: red
+	position: absolute
+	right: 5vw
+	top: 50%
+	transform: translateY(-50%)
+	font-size: 4vw
+	text-align: center
+.invalid 
+	border: 1px solid red
+.button:hover,
+.button:focus,
+.button:active
+	background: #0db1a8
+.reg__footer
+	text-align: center
+	margin-top: 5vw
+	margin-bottom: 5vw
+	font-size: 4vw
+	a 
+		color: $aqua
+		font-weight: 600
+.reg__login
+	text-align: center 
+	margin-bottom: 10vw
+	a 
+		color: $aqua 
+		font-weight: 600
+.forgot-password
+	font-weight: 600 
+	color: $aqua
+	margin-top: 3vw
+	display: block	
+	font-size: 4vw
+	text-decoration: underline
+.reg__login--pass
+	margin-top: 5vw
+.reg-title--left
+	text-align: left
+	margin-bottom: 3vw
+.registration
+	padding-top: 7vw
+.g-recaptcha
+	margin-bottom: 5vw
+//end registration style
+
 @import "media"
 
 
