@@ -723,6 +723,9 @@ input[type="submit"]
 	box-sizing: border-box
 	font-weight: 300
 	margin-top: 5vw
+	text-align: center
+	justify-content: center
+	position: relative
 	img 
 		width: 7vw
 		height: 7vw
@@ -730,7 +733,10 @@ input[type="submit"]
 		min-height: 7vw 
 		max-width: 7vw 
 		min-width: 7vw
-		margin-right: 15vw
+		position: absolute
+		left: 10vw
+		top: 50% 
+		transform: translateY(-50%)
 .google__btn:hover,
 .google__btn:focus,
 .google__btn:active	
@@ -747,13 +753,19 @@ input[type="submit"]
 	font-weight: 300
 	color: #fff
 	margin-top: 5vw
+	text-align: center
+	justify-content: center
+	position: relative
 	img 
 		width: 10vw
 		max-height: 7vw 
 		min-height: 7vw 
 		max-width: 7vw 
 		min-width: 7vw
-		margin-right: 15vw
+		position: absolute
+		left: 10vw
+		top: 50% 
+		transform: translateY(-50%)
 .vk__btn:hover,
 .vk__btn:active,
 .vk__btn:focus
@@ -769,13 +781,19 @@ input[type="submit"]
 	font-weight: 300
 	color: #fff
 	margin-top: 5vw
+	text-align: center
+	justify-content: center
+	position: relative
 	img 
 		width: 7vw
 		max-height: 7vw 
 		min-height: 7vw 
 		max-width: 7vw 
 		min-width: 7vw
-		margin-right: 15vw
+		position: absolute
+		left: 10vw
+		top: 50% 
+		transform: translateY(-50%)
 .fb__btn:hover,
 .fb__btn:focus,
 .fb__btn:active	
@@ -844,11 +862,10 @@ input[type="submit"]
 .registration
 	padding-top: 2vw
 	h2 
-		margin-bottom: 1vw
+		margin-bottom: 7vw
 .g-recaptcha
 	margin-bottom: 5vw
-.g-recaptcha
-	max-width: 100% !important
+
 //end registration style
 
 @import "media"
