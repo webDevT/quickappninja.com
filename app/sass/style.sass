@@ -68,21 +68,27 @@ main
 		font-size: 5.6vw
 input 
 	width: 100%
-	height: 15.938vw
+	height: 12.994vw
 	border-radius: 1vw
 	border: 1px solid #ebebeb
 	background-color: #fafafa
-	font-size: 1.125rem
 	font-weight: 300
 	line-height: 36px
 	font-family: "Open Sans",sans-serif
 	box-sizing: border-box
 	padding: 5vw
 	outline: none
+	font-size: 4.8vw
 input::placeholder 
 	color: #999999
 input:focus::placeholder
 	color: transparent
+input[type="submit"]
+	height: 15.938vw
+	display: flex 
+	align-items: center
+	justify-content: center
+	line-height: 1
 .red 
 	color: #fe6354
 .blue 
@@ -697,7 +703,7 @@ input:focus::placeholder
 .registration__sub-title
 	font-family: $nunito
 	text-align: center
-	margin-bottom: 10vw
+	margin-bottom: 7vw
 	span 
 		font-weight: 600
 .reg-title
@@ -715,16 +721,15 @@ input:focus::placeholder
 	border-radius: 1vw
 	padding: 3vw 10vw
 	box-sizing: border-box
-	font-size: 6vw
 	font-weight: 300
 	margin-top: 5vw
 	img 
-		width: 10vw
-		height: 10vw
-		max-height: 10vw 
-		min-height: 10vw 
-		max-width: 10vw 
-		min-width: 10vw
+		width: 7vw
+		height: 7vw
+		max-height: 7vw 
+		min-height: 7vw 
+		max-width: 7vw 
+		min-width: 7vw
 		margin-right: 15vw
 .google__btn:hover,
 .google__btn:focus,
@@ -739,16 +744,15 @@ input:focus::placeholder
 	border-radius: 1vw
 	padding: 3vw 10vw
 	box-sizing: border-box
-	font-size: 6vw
 	font-weight: 300
 	color: #fff
 	margin-top: 5vw
 	img 
 		width: 10vw
-		max-height: 10vw 
-		min-height: 10vw 
-		max-width: 10vw 
-		min-width: 10vw
+		max-height: 7vw 
+		min-height: 7vw 
+		max-width: 7vw 
+		min-width: 7vw
 		margin-right: 15vw
 .vk__btn:hover,
 .vk__btn:active,
@@ -762,16 +766,15 @@ input:focus::placeholder
 	border-radius: 1vw
 	padding: 3vw 10vw
 	box-sizing: border-box
-	font-size: 6vw
 	font-weight: 300
 	color: #fff
 	margin-top: 5vw
 	img 
-		width: 10vw
-		max-height: 10vw 
-		min-height: 10vw 
-		max-width: 10vw 
-		min-width: 10vw
+		width: 7vw
+		max-height: 7vw 
+		min-height: 7vw 
+		max-width: 7vw 
+		min-width: 7vw
 		margin-right: 15vw
 .fb__btn:hover,
 .fb__btn:focus,
@@ -814,10 +817,9 @@ input:focus::placeholder
 .button:active
 	background: #0db1a8
 .reg__footer
-	text-align: center
 	margin-top: 5vw
 	margin-bottom: 5vw
-	font-size: 4vw
+	font-size: 3.5vw
 	a 
 		color: $aqua
 		font-weight: 600
@@ -840,9 +842,13 @@ input:focus::placeholder
 	text-align: left
 	margin-bottom: 3vw
 .registration
-	padding-top: 7vw
+	padding-top: 2vw
+	h2 
+		margin-bottom: 1vw
 .g-recaptcha
 	margin-bottom: 5vw
+.g-recaptcha
+	max-width: 100% !important
 //end registration style
 
 @import "media"
