@@ -56,3 +56,35 @@ jQuery(function($){
 });
 //------end popup-------
 });
+
+//start captcha//
+
+function scaleCaptcha(elementWidth) {
+  var reCaptchaWidth = 304;
+    var containerWidth = $('.container2').width();
+  if(reCaptchaWidth > containerWidth) {
+    var captchaScale = containerWidth / reCaptchaWidth;
+    $('.g-recaptcha').css({
+      'transform':'scale('+captchaScale+')'
+    });
+  }
+}
+
+$(function() { 
+  scaleCaptcha();
+  $(window).resize( $.throttle( 100, scaleCaptcha ) );
+  
+});
+//end captche 
+
+//start cookies popup
+setTimeout(function(){
+  document.getElementById('cookies-popup').style.display = 'block';
+}, 5000);
+
+$('.cookies-popup .button').click(function(){
+  $('.cookies-popup').hide();
+})
+//end cookies popup 
+
+

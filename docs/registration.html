@@ -159,7 +159,8 @@
  
   <div class="form-footer">
     
-   <input type="submit" value="Register" id="submit" name="submit" class="button" />
+
+   <button type="submit" id="submit" name="submit" class="button">Register</button>
   </div>
   <div>
     <!-- <input type="submit" value="Submit" /> -->
@@ -247,6 +248,8 @@ you have read and agree to the <a href="terms-and-conditions.html">Terms of Serv
 </div>
 
 <!-- -------end video popup--------- -->
+
+<div class="warning" id="warning">Fill all required fields</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <script>$(document).ready(function() {
@@ -268,6 +271,10 @@ you have read and agree to the <a href="terms-and-conditions.html">Terms of Serv
     }
     if (password.length< 2 && password.length== 1 ) {
       $('#password').after('<span class="error">This field must be </br >at least 6 characters long</span>').addClass("invalid");
+    }
+
+    if (first_name.length< 1 && password.length< 1 &&  email.length< 1 ) {
+      $('.warning').addClass("active");
     }
     
    // if (email.length< 2 && email.length== 1 ) {
