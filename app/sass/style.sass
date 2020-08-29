@@ -889,22 +889,27 @@ input[type="submit"]
 	font-size: 3.3vw
 	padding-bottom: 1.5vw
 	padding-top: 1.5vw
-	text-align: center
 	position: fixed 
 	bottom: 0 
 	left: 0 
 	width: 100%
 	display: none
 	.container 
-		max-width: 98%
+		max-width: 94%
+		display: flex
 	.button 
-		margin: 0vw auto
-		margin-top: 1vw
-		display: block
+		display: flex
+		align-items: center 
+		justify-content: center
 		width: 25vw
 		text-align: center
 		padding: 1.5vw 2vw
 		font-size: 3.3vw
+		margin-left: 1vw
+.cookies-popup.active 
+	display: flex
+
+
 
 //----end cookies popup----
 .registration .button
@@ -916,17 +921,29 @@ input[type="submit"]
 .warning
 	position: fixed 
 	bottom: 1vw
-	background: red
+	background: #c8302b
 	color: #fff 
 	right: 1vw
 	padding: 3vw 10vw
 	border-radius: 1vw
-	box-shadow: 0 0 5px rgba(red, 0.7)
+	box-shadow: 0 0 5px rgba(#c8302b, 0.7)
 	transition: all 0.5s 
 	transform: translate(110%)
 .warning.active 
-	transform: translate(0%)
+	transform: translate(110%)
+	animation-name: pulse
+	animation-duration: 5s
+	
 
+@keyframes pulse
+	0%
+		transform: translate(110%)
+	10%
+		transform: translate(0%)
+	90%
+		transform: translate(0%)
+	100% 
+		transform: translate(110%)
 
 @import "media"
 

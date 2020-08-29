@@ -79,7 +79,7 @@ $(function() {
 
 //start cookies popup
 setTimeout(function(){
-  document.getElementById('cookies-popup').style.display = 'block';
+  $('.cookies-popup').addClass('active');
 }, 5000);
 
 $('.cookies-popup .button').click(function(){
