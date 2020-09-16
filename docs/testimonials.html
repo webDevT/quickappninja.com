@@ -10,13 +10,11 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-
- <!-- start header -->
         <header class="header">
             <div class="container">
                 <div class="header__logo">
                     <a href="index.html">
-                        <img class="logo-img" src="img/ninja-logo-single.svg" alt="" />
+                        <img class="logo-img" data-src="img/ninja-logo-single.svg" alt="homepage" />
                         <?xml version="1.0" encoding="UTF-8"?>
                         <svg viewBox="0 0 135 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <g id="Dashboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -87,7 +85,6 @@
                         </svg>
                     </a>
                 </div>
-
                 <div class="btn__menu">
                     <div class="btn__menu-row"></div>
                     <div class="btn__menu-row"></div>
@@ -96,7 +93,6 @@
             </div>
             <div class="menu">
                 <div class="container">
-
                     <ul>
                     	<li class="menu__group">
                     		<li><a href="registration.html">Register</a></li>
@@ -107,80 +103,62 @@
                     		<li><a href="index.html#how-it-works">How it works</a></li>
                         <li><a href="index.html#showcase">Showcase</a></li>
                         <li><a href="index.html#features">Features</a></li>
-                    	</li>
-
-
-                    	
-
-                        
-                        
-                        
+                    	</li>                       
                         <li class="menu-btn"><a href="registration.html">Create Game!</a></li>
                     </ul>
                 </div>
             </div>
         </header>
-
-        <!-- end header -->
-
 <main>
-
 	<div class="testimonials">
 		<div class="container">
-		<h2>Testimonials</h2>
-		
-	
-		
+		<h2>Testimonials</h2>		
 <div class='embedsocial-reviews' data-ref="a69857837636ded7121977d5582a2fe453f100a2"></div><script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ri.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialReviewsScript"));</script>
 <div class="button-wrapper">
 		<a href="registration.html" class="button">
                             Create Game Now
                         </a>
 	</div>
-
 </div>
-
-	</div>
-	
+	</div>	
 </main>
-
-<!-- start footer section -->
         <footer class="footer">
             <div class="container">
                 <div class="footer__menu">
                     <div class="footer__menu-col">
                         <a href="https://asomastery.quickappninja.com/">ASO Mastery</a>
                         <a href="testimonials.html">Testimonials</a>
-                        <a href="index.html#showcase">Showcase</a>
+                        <a href="#showcase">Showcase</a>
                         <a href="https://quickappninja.zendesk.com/hc/en-us">Support</a>
                     </div>
-
-                    <div class="footer__menu-col">
-                        
-                        <a href="terms-and-conditions.html">Terms and Conditions</a>
-                        
+                    <div class="footer__menu-col">                      
+                        <a href="terms-and-conditions.html">Terms and Conditions</a>                        
                         <a href="privacy-policy.html">Privacy Policy</a>
                         <a href="cookie-policy.html">Cookie Policy</a>
                     </div>
                 </div>
-
                 <div class="footer__social">
                     <a href="https://www.facebook.com/quickappninja">
-                        <img src="img/facebook.svg" />
+                        <img data-src="img/facebook.svg" alt="Join our Facebook Community" />
                     </a>
                     <a href="https://vk.com/mobgamebuilder">
-                        <img src="img/vk.svg" />
+                        <img data-src="img/vk.svg" alt="Join our VK community page"/>
                     </a>
                     <a href="https://twitter.com/quickappninja">
-                        <img src="img/twitter.svg" />
+                        <img data-src="img/twitter.svg" alt="Follow us on Twitter"/>
                     </a>
                 </div>
-                <div class="footer__bottom">
-                    <a href="index.html" class="footer-logo">
-                        <img src="img/ninja-logo-single-footer.svg" alt="" />
-                        <img src="img/footer-logo.svg" alt="" />
-                    </a>
-
+                 <div class="footer__bottom">
+                    <div class="footer-bottom__logos">
+                        <a href="index.html" class="footer-logo">
+                        <img data-src="img/ninja-logo-single-footer.svg" alt="homepage" />
+                        <img data-src="img/footer-logo.png" alt="homepage" />
+                    </a>                    
+                    <div class="pay__logos">
+                        <a href=""><img data-src="img/visa.jpg" alt="Accept VISA"></a>
+                        <a href=""><img data-src="img/ms.jpg" alt="Accept Mastercard"></a>
+                    </div>
+                    </div>
                     <div class="copy">Copyright © 2014 - 2020. All rights reserved.</div>
                     <div class="copy">
                         QuickAppNinja SIA, <a href="mailto:info@quickappninja.com">info@quickappninja.com</a>
@@ -189,20 +167,10 @@
                 </div>
             </div>
         </footer>
-        <!-- end footer section -->
-
-<!-- -----start video popup----- -->
-<div class="video-popup">
-<img class="video-popup__close" src="img/close.svg" alt="">
-<div class="video-popup-wrapper">
-	<iframe src="https://www.youtube.com/embed/liwWLoA4-JE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-	
-</div>
-
-<!-- -------end video popup--------- -->
+<div class="body-padding"></div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/libs.min.js"></script>
+    <script src="js/lazy.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

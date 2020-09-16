@@ -5,11 +5,10 @@
 body 
 	color: $grey
 	font-size: 4.800vw
-	font-family: $nunito
+	font-family: 'Candara', sans-serif
 	margin: 0 
 	padding: 0
 	position: relative
-	padding-bottom: 100.938vw
 	min-height: 100vw
 .container
 	max-width: 90%
@@ -23,7 +22,6 @@ ul
 a 
 	text-decoration: none
 h2 
-	font-family: $nunito
 	font-weight: 600
 	font-size: 7.4vw
 	margin-top: 0 
@@ -38,9 +36,7 @@ h3
 	font-size: 7vw
 	color: $black
 	font-weight: 300 
-	font-family: $nunito
 h4 
-	font-family: $nunito
 	font-weight: 600
 	font-size: 6.4vw
 	margin-top: 0 
@@ -57,7 +53,6 @@ h5
 	margin-bottom: 3vw
 h6 
 	font-size: 4.5vw
-	font-family: $nunito
 	font-weight: 400 
 	color: $grey
 	margin-top: 3vw 
@@ -76,7 +71,6 @@ input
 	background-color: #fafafa
 	font-weight: 300
 	line-height: 36px
-	font-family: "Open Sans",sans-serif
 	box-sizing: border-box
 	padding: 5vw
 	outline: none
@@ -108,8 +102,8 @@ input[type="submit"]
 	padding: 1vw 3vw
 	border-radius: 7vw
 	transform: translate(-35%, -25%)
-	font-family: 'Nunito', sans-serif
 	font-weight: 700
+	z-index: 9
 .button,
 .button a 
 	color: #fff 
@@ -117,7 +111,6 @@ input[type="submit"]
 	display: inline-block
 	padding: 3vw 10vw
 	border-radius: 1vw
-	font-family: $nunito
 	font-weight: 600
 	font-size: 7.4vw
 .sub-title 
@@ -255,7 +248,6 @@ input[type="submit"]
 	padding-top: 7vw
 .main-screen__text
 	font-weight: 300 
-	font-family: $nunito
 	margin-bottom: 14vw
 	font-size: 4.7vw
 	text-align: center
@@ -316,7 +308,6 @@ input[type="submit"]
 	text-align: center
 .how-it-works__num
 	font-size: 8.4vw
-	font-family: $nunito 
 	font-weight: 600 
 	color: #fff 
 	background: #eb533c
@@ -328,6 +319,7 @@ input[type="submit"]
 	margin: 0 auto
 	border-radius: 50%
 	margin-bottom: 4vw
+	font-family: "Arial", sans-serif
 .how-it-works__item
 	padding-top: 10vw
 .how-it-works__text 
@@ -542,10 +534,10 @@ input[type="submit"]
 .competition__item-value
 	font-size: 15vw
 	border-bottom: 2vw solid #fe6354
-	font-family: $nunito
 	width: 40vw
 	margin: 0 auto
 	text-align: center
+	font-family: "Arial", sans-serif
 .competition__item-value.blue 
 	color: #2a81e3
 	border-color: #2a81e3 
@@ -568,7 +560,7 @@ input[type="submit"]
 
 //start win style
 .win
-	padding-bottom: 20vw 
+	padding-bottom: 0vw 
 	img 
 		width: 100%
 	h2 
@@ -590,7 +582,7 @@ input[type="submit"]
 	display: flex
 	a 
 		display: block
-		margin-bottom: 3vw
+		padding-bottom: 5vw
 		font-size: 3.8vw
 		color: $grey
 .footer__menu-col
@@ -611,10 +603,12 @@ input[type="submit"]
 	display: flex
 	margin-bottom: 1vw
 	justify-content: center
+	align-items: center
 	img:first-child  
 		width: 20vw
 	img:last-child 
 		width: 33vw
+		max-height: 12vw
 .copy 
 	color: #bbc3c9
 	font-size: 3vw
@@ -706,7 +700,6 @@ input[type="submit"]
 
 //start registration style
 .registration__sub-title
-	font-family: $nunito
 	text-align: center
 	margin-bottom: 7vw
 	span 
@@ -952,7 +945,55 @@ input[type="submit"]
 		transform: translate(0%)
 	100% 
 		transform: translate(110%)
+.registration-new
+	padding-top: 10vw
 
+.registration-new__buttons
+	padding-top: 5vw
+	.button 
+		max-width: 70vw 
+		width: 70vw
+		font-size: 5.5vw 
+		display: flex 
+		justify-content: center 
+		align-items: center		
+.button.button--grey
+	background: #eef0f0
+	color: #232724
+	margin-top: 3vw
+.button-wrapper--paddiing 
+	padding-top: 10vw
+.padding-top5
+	padding-top: 5vw
+.footer-bottom__logos
+	display: flex 
+	justify-content: space-between
+	margin-bottom: 2vw
+.pay__logos
+	display: flex 
+	align-items: center
+
+	a 
+		display: flex 
+		justify-content: center 
+		align-items: center
+		margin-left: 2vw 
+	img 
+		width: 11vw
+.animated
+	animation-duration: 1s
+	animation-fill-mode: both
+@keyframes fadeIn
+	from
+		opacity: 0
+	to
+		opacity: 1
+.fadeIn
+	animation-name: fadeIn
+.body-padding
+	padding-top: 120vw
+.table__row
+	overflow: hidden
 @import "media"
 
 
