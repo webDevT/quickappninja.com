@@ -16,12 +16,6 @@ else{
 $('.header').removeClass("sticky");
 }
 });
-$('.slider').slick({
-prevArrow: false,
-nextArrow: false,
-slidesToShow: 1,
-dots: true
-});
 });
 setTimeout(function(){
   $('.cookies-popup').addClass('active');
