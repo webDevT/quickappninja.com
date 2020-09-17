@@ -44,6 +44,7 @@ gulp.task('html', function(){
 
 gulp.task('script', function(){
 	return gulp.src('app/js/*.js')
+	.pipe(sass({outputStyle: 'compressed'}))
 	.pipe(browserSync.reload({stream: true}))
 
 });
